@@ -11,11 +11,14 @@ export default function Menu() {
       label: 'Início',
       to: '/',
     }, {
-      label: 'Cardápio',
-      to: '/cardapio',
+      label: 'Roupas',
+      to: '/roupas',
     }, {
       label: 'Sobre',
       to: '/sobre',
+    }, {
+      label: 'Contatos',
+      to: '/contatos',
     }
   ];
 
