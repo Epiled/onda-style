@@ -19,8 +19,8 @@
     flex-grow: 1;
   }
   &--ativo {
-    background-color: $blue;
-    color: white;
+    background-color: $rosa-thema-10;
+    color: $branco-thema;
   }
   &__options {
     display: none;
@@ -45,9 +45,9 @@
     width: inherit;
     &:hover,
     &--ativo {
-      background-color: $blue;
+      background-color: $rosa-thema-10;
       cursor: pointer;
-      color: white;
+      color: $branco-thema;
     }
   }
 }

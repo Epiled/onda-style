@@ -1,0 +1,8 @@
+@import "styles/variaveis";
+@import "styles/breakpoints";
+
+.wrap {
+  max-width: 1368px;
+  margin: 0 auto;
+  padding: 20px $padding-horizontal-mobile;
+}

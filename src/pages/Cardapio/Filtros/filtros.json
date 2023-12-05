@@ -1,18 +1,18 @@
 [
   {
-    "label": "Massas",
+    "label": "Biquini",
     "id": 1
   },
   {
-    "label": "Carnes",
+    "label": "Borboleta",
     "id": 2
   },
   {
-    "label": "Combos",
+    "label": "Saia",
     "id": 3
   },
   {
-    "label": "Veganos",
+    "label": "Vestido",
     "id": 4
   }
 ]

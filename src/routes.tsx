@@ -23,15 +23,15 @@ export default function AppRouter() {
         <Menu />
         <Routes>
           <Route path='/' element={<PaginaPadrao />}>
-            <Route index element={<Inicio />} />
             <Route path='roupas' element={<Cardapio />} />
             <Route path='sobre' element={<Sobre />} />
             <Route path='personalizacao' element={<Personalizacao />} />
           </Route>
+          
+          <Route index element={<Inicio />} />
 
           <Route path='prato/:id' element={<Prato />} />
           <Route path='contatos' element={<Contatos />} />
-
 
           <Route path='/admin'>
             <Route index element={<Admin />} />
@@ -42,7 +42,6 @@ export default function AppRouter() {
             <Route path='cadastrar-produto' element={<CadastrarProduto />} />
             <Route path='produtos' element={<Produtos />} />
           </Route>
-
 
           <Route path='*' element={<NotFound />} />
         </Routes>

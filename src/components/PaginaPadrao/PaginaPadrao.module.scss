@@ -3,30 +3,23 @@
 
 .header {
   align-items: center;
-  background-image: url("/assets/cardapio/header.png");
+  background-image: 
+  linear-gradient(90deg,
+  $green-thema-o-50 0%,
+  $laranja-thema 100%),
+  url("/assets/praia/praia.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: bottom;
   display: flex;
   height: 300px;
-  padding: 0px $padding-horizontal;
-
-  @media (max-width: $desktop_xsm) {
-    padding: 0px $padding-horizontal-mobile-init;
-  }
-
-  @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
-    padding: 0px $padding-horizontal-sm;
-  }
-
-  @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
-    padding: 0px $padding-horizontal-md;
-  }
+  padding: 0px $padding-horizontal-mobile;
 
   &__text {
     color: white;
     font-size: 5rem;
     min-width: 400px;
-    width: 40%;
+    text-align: center;
 
     @media (max-width: $desktop_xsm) {
       font-size: 3.5rem;

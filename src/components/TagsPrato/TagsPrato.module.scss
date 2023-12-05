@@ -1,10 +1,10 @@
 @import "styles/variaveis";
 @import "styles/breakpoints";
 
-$massas: #d73b3b;
-$carnes: #30201e;
-$combos: #e6c864;
-$veganos: #80aa40;
+$biquini: $rosa-thema;
+$borboleta: $green-thema;
+$saia: $laranja-thema;
+$vestido: $marrom-thema;
 
 .tags {
   display: flex;
@@ -34,22 +34,25 @@ $veganos: #80aa40;
     justify-content: center;
     padding: 10px 30px;
 
-    &__massas {
-      background-color: $massas;
-      color: white;
+    &__biquini {
+      background-color: $biquini;
+      color: $branco-thema;
     }
 
-    &__carnes {
-      background-color: $carnes;
-      color: white;
+    &__borboleta {
+      background-color: $borboleta;
+      color: $marrom-thema-10;
     }
 
-    &__combos {
-      background-color: $combos;
+    &__saia {
+      background-color: $saia;
+      color: $marrom-thema-10;
+
     }
 
-    &__veganos {
-      background-color: $veganos;
+    &__vestido {
+      background-color: $vestido;
+      color: $branco-thema;
     }
   }
 
@@ -64,7 +67,7 @@ $veganos: #80aa40;
   }
 
   &__valor {
-    color: $red;
+    color: $black;
     font-size: 1.7rem;
   }
 }

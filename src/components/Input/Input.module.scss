@@ -1,0 +1,39 @@
+@import "styles/variaveis";
+@import "styles/breakpoints";
+
+.etq {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  margin-bottom: 1.5rem;
+  gap: .5rem;
+  font-weight: bold;
+  font-style: italic;
+  color: $laranja-thema-20;
+
+  &__ipt {
+    padding: 1rem;
+    font-size: 20px;
+    border-radius: .5rem;
+    background: $green-thema-90;
+    color: $marrom-thema;
+    font-weight: 500;
+    border: 1px solid $green-thema;
+
+    &::placeholder {
+      color: $marrom-thema-40;
+    }
+  }
+
+  &__menu {
+    margin-left: auto;
+    align-self: center;
+    margin-bottom: 0;
+  }
+
+  @media screen and (max-width: $desktop_xsm) {
+    &__menu {
+      width: 100%;
+    }
+  }
+}

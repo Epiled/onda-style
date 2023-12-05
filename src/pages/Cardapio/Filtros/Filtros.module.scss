@@ -18,8 +18,8 @@
     width: 150px;
     flex-grow: 1;
     &--ativo {
-      background-color: $blue;
-      color: white;
+      background-color: $rosa-thema-10;
+      color: $branco-thema;
     }
     &:hover {
       cursor: pointer;

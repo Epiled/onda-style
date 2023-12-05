@@ -1,0 +1,10 @@
+@import "styles/variaveis";
+
+.botao {
+  padding: 1rem 1.5rem;
+  background-color: $rosa-thema;
+  border-radius: 8px;
+  border: 0;
+  font-weight: 900;
+  color: $branco-thema;
+}

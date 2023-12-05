@@ -1,4 +1,57 @@
 @import 'styles/variaveis';
+@import "styles/breakpoints";
+
+.banner {
+  background:
+    linear-gradient(90deg,
+      rgba(253, 120, 48, 0.396) 0%,
+      #FD7831 100%),
+    url(../../assets/banner/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  height: 40vh;
+  min-height: 400px;
+  max-height: 400px;
+  position: relative;
+
+  @media screen and (min-width: $mobile) {
+    background-image:
+      linear-gradient(90deg,
+      #FD7831 0%,
+      rgba(253, 120, 48, 0.396) 40%,
+        rgba(0, 0, 0, 0.3) 50%,
+        rgba(0, 0, 0, 0) 100%),
+      url(../../assets/banner/bg.jpg);
+  }
+
+  &__flutuante {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 400px;
+    color: $branco-thema;
+
+  }
+
+  &__titulo {
+    font-size: 36px;
+  }
+
+  &__destaque {
+    display: block;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-style: italic;
+    border-bottom: 3px solid $branco-thema;
+    padding-bottom: 10px;
+  }
+
+  &__intro {
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
 
 .recomendados {
   border-radius: 2px;
@@ -7,17 +60,22 @@
   gap: 30px;
   justify-content: space-between;
 }
+
 .recomendado {
+  box-shadow: 0 0 3px 0 #0000004d;
+  padding: 0 1rem 1rem 1rem;
   &__imagem {
     width: 300px;
     margin-bottom: 10px;
+
     img {
       border-radius: 8px;
       width: 100%;
     }
   }
+
   &__botao {
-    background-color: $red;
+    background-color: $marrom-thema;
     border: none;
     border-radius: 5px;
     color: white;
@@ -27,34 +85,32 @@
     padding: 10px 0;
     transition: .2s ease;
     width: 100%;
+
     &:hover {
-      background-color: $red-dark;
+      background-color: $laranja-thema-50;
     }
   }
-}
-.nossaCasa {
-  margin-bottom: 100px;
-  position: relative;
-  width: 100%;
-  img {
-    border-radius: 5px;
-    width: 100%;
+
+  &__titulo {
+    font-size: 2.4rem;
+    border-bottom: 2px solid $laranja-thema-50;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
   }
-  &__endereco {
-    align-items: center;
-    background-color: $dark;
-    border-radius: 5px;
-    bottom: -45px;
-    color: white;
+
+  &__infos {
     display: flex;
-    flex-direction: column;
-    font-weight: bold;
-    height: 100px;
-    justify-content: center;
-    position: absolute;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    width: 200px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  &__qtd {
+
+  }
+
+  &__price {
+
   }
 }

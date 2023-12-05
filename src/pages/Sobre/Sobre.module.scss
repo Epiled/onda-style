@@ -1,13 +1,33 @@
-
 @import "styles/variaveis";
 @import "styles/breakpoints";
+
+.sobre {
+  text-align: left;
+
+  p {
+    font-size: 24px;
+    color: $black;
+    font-weight: bold;
+  }
+}
 
 .sobreNos {
   display: flex;
   gap: 20px;
   margin-bottom: 50px;
+
   @media (max-width: $desktop_md) {
     flex-direction: column;
+  }
+
+  @media (min-width: $desktop_md) {
+    &:nth-child(odd) {
+      flex-direction: row;
+    }
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
   }
 
   &__texto {
@@ -15,12 +35,19 @@
     flex-direction: column;
     justify-content: center;
     font-size: 1.5rem;
-    font-weight: bold;
-    text-align: justify;
 
     p {
-      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 400;
     }
+  }
+
+  h2 {
+    color: $marrom-thema-20;
+    font-style: italic;
+  }
+
+  img {
+    object-fit: cover;
   }
 }
 
@@ -34,6 +61,7 @@
   &__imagem {
     max-width: 600px;
     flex: 1;
+
     @media (max-width: $desktop_md) {
       width: 100%;
     }

@@ -1,9 +1,11 @@
 import styles from './Menu.module.scss';
-import { ReactComponent as Logo } from 'assets/logo.svg';
+// import { ReactComponent as Logo } from 'assets/logo.svg';
+import Logo from 'assets/logo.webp';
 import { Link } from 'react-router-dom';
 import BotaoHamburguer from './BotaoHamburguer';
 import { useState } from 'react';
 import classNames from 'classnames';
+import Input from 'components/Input';
 
 export default function Menu() {
   const rotas = [
@@ -26,8 +28,11 @@ export default function Menu() {
 
   return (
     <nav className={styles.menu}>
-      <Logo />
+
+      <img width={'200px'} src={Logo} alt="" />
       <BotaoHamburguer menu={menu} setMenu={setMenu} />
+      <Input className={'etq__menu'} order={2} tipoIpt='text' dica='O quê esta buscado?' />
+
       <ul className={classNames({
         [styles.menu__list]: true,
         [styles['menu__list--ativo']]: menu

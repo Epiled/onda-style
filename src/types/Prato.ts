@@ -1,5 +1,5 @@
-import cardapio from 'data/cardapio.json';
+import roupas from 'data/roupas.json';
 
-export type Cardapio = typeof cardapio;
+export type Cardapio = typeof roupas;
 
-export type Prato = typeof cardapio[0];
+export type Prato = typeof roupas[0];

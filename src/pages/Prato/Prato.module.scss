@@ -4,7 +4,7 @@
 .voltar {
   background-color: transparent;
   border: none;
-  color: $red;
+  color: $laranja-thema;
   cursor: pointer;
   font-size: 1.5rem;
   font-weight: bold;
@@ -15,6 +15,11 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (min-width: $desktop_md) {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .titulo {
@@ -46,7 +51,7 @@
     font-weight: bold;
   }
 
-  &____detalhes {
+  &__detalhes {
     display: flex;
     justify-content: space-between;
   }

@@ -2,22 +2,16 @@
 @import "styles/breakpoints";
 
 .menu {
-  padding: 20px $padding-horizontal;
+  padding: 20px $padding-horizontal-mobile;
   display: flex;
   position: relative;
+  background-color: $branco-thema;
 
   @media (max-width: $desktop_xsm) {
     justify-content: space-between;
-    padding: 20px $padding-horizontal-mobile-init;
     align-items: center;
-  }
-
-  @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
-    padding: 20px $padding-horizontal-sm;
-  }
-
-  @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
-    padding: 20px $padding-horizontal-md;
+    flex-wrap: wrap;
+    gap: .5rem;
   }
 
   &__list {
@@ -30,11 +24,12 @@
       top: 100%;
       right: -200px;
       gap: 1rem;
-      background: $red;
+      background: $rosa-thema-10;
       margin: 0;
       padding: 1rem;
       border-radius: 0 0 0 10px;
       transition: right .5s;
+      z-index: 3;
 
       &--ativo {
         right: 0;
@@ -47,7 +42,7 @@
     padding: 0 20px;
 
     a {
-      color: $dark;
+      color: $laranja-thema;
       cursor: pointer;
       font-size: 24px;
       font-weight: 600;
@@ -59,7 +54,7 @@
       }
 
       &:hover {
-        color: $dark-grey;
+        color: $laranja-thema-30;
       }
     }
   }

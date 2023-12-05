@@ -1,0 +1,106 @@
+[
+    {
+      "title": "Biquini 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "photo": "/assets/feminino/biquini/biquini-1.webp",
+      "size": 400,
+      "qtd": 2,
+      "price": 73.0,
+      "id": 1,
+      "category": {
+        "id": 1,
+        "label": "Biquini"
+      }
+    },
+    {
+      "title": "Biquini 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "photo": "/assets/feminino/biquini/biquini-2.webp",
+      "size": 400,
+      "qtd": 2,
+      "price": 54.0,
+      "id": 2,
+      "category": {
+        "id": 1,
+        "label": "Biquini"
+      }
+    },
+    {
+      "title": "Borboleta 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "photo": "/assets/feminino/borboleta/borboleta-1.webp",
+      "size": 350,
+      "qtd": 1,
+      "price": 58.0,
+      "id": 3,
+      "category": {
+        "id": 2,
+        "label": "Borboleta"
+      }
+    },
+    {
+      "title": "Borboleta 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "photo": "/assets/feminino/borboleta/borboleta-2.webp",
+      "size": 450,
+      "qtd": 1,
+      "price": 42.0,
+      "id": 4,
+      "category": {
+        "id": 2,
+        "label": "Borboleta"
+      }
+    },
+    {
+      "title": "Saia 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "photo": "/assets/feminino/saia/saia-1.webp",
+      "size": 550,
+      "qtd": 2,
+      "price": 86.0,
+      "id": 5,
+      "category": {
+        "id": 3,
+        "label": "Saia"
+      }
+    },
+    {
+      "title": "Saia 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "photo": "/assets/feminino/saia/saia-2.webp",
+      "size": 850,
+      "qtd": 3,
+      "price": 123.0,
+      "id": 6,
+      "category": {
+        "id": 3,
+        "label": "Saia"
+      }
+    },
+    {
+      "title": "Vestido 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "photo": "/assets/feminino/vestido/vestido-1.webp",
+      "size": 350,
+      "qtd": 1,
+      "price": 45.0,
+      "id": 7,
+      "category": {
+        "id": 4,
+        "label": "Vestido"
+      }
+    },
+    {
+      "title": "Vestido 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "photo": "/assets/feminino/vestido/vestido-2.webp",
+      "size": 350,
+      "qtd": 1,
+      "price": 37.0,
+      "id": 8,
+      "category": {
+        "id": 4,
+        "label": "Vestido"
+      }
+    }
+  ]

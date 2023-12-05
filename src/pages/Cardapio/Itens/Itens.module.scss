@@ -1,7 +1,5 @@
 .itens {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 40px;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 2rem;
 }
